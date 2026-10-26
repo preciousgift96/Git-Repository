@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>GitHub Random Repository</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="github-icon">
+        <span>◉</span>
+      </div>
+      <h1>GitHub Random Repository</h1>
+      <p>
+        Discover random GitHub repositories based on your
+        favourite programming language.
+      </p>
+    </header>
+    <!-- Language Selection -->
+    <section class="search-section">
+      <label for="language">
+        Choose a programming language
+      </label>
+      <div class="controls">
+        <select id="language">
+          <option value="">Select a language</option>
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+          <option value="typescript">TypeScript</option>
+          <option value="c++">C++</option>
+          <option value="c">C</option>
+          <option value="c#">C#</option>
+          <option value="go">Go</option>
+          <option value="rust">Rust</option>
+          <option value="php">PHP</option>
+          <option value="ruby">Ruby</option>
+          <option value="swift">Swift</option>
+          <option value="kotlin">Kotlin</option>
+        </select>
+        <button id="search-btn">
+          Search
+        </button>
+      </div>
+    </section>
+    <!-- Status Message -->
+    <section id="status" class="status">
+      <p>Select a programming language to find a repository.</p>
+    </section>
+    <!-- Repository Card -->
+    <section id="repository-card" class="repository-card hidden">
+      <div class="repository-header">
+        <div>
+          <span id="repository-language" class="language-badge">
+            JavaScript
+          </span>
+          <h2 id="repository-name">
+            Repository Name
+          </h2>
+        </div>
+        <a
+          id="repository-link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="github-link"
+        >
+          View on GitHub ↗
+        </a>
+      </div>
+      <p id="repository-description" class="description">
+        Repository description goes here.
+      </p>
+      <!-- Repository Statistics -->
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-icon">★</span>
+          <div>
+            <span class="stat-label">Stars</span>
+            <strong id="stars">0</strong>
+          </div>
+        </div>
+        <div class="stat">
+          <span class="stat-icon">⑂</span>
+          <div>
+            <span class="stat-label">Forks</span>
+            <strong id="forks">0</strong>
+          </div>
+        </div>
+        <div class="stat">
+          <span class="stat-icon">○</span>
+          <div>
+            <span class="stat-label">Open Issues</span>
+            <strong id="issues">0</strong>
+          </div>
+        </div>
+      </div>
+      <!-- Repository Owner -->
+      <div class="owner">
+        <img
+          id="owner-avatar"
+          src=""
+          alt="Repository owner"
+        >
+        <div>
+          <span>Created by</span>
+          <strong id="owner-name">
+            Username
+          </strong>
+        </div>
+      </div>
+      <!-- Refresh Button -->
+      <button id="refresh-btn" class="refresh-btn">
+        ↻ Find Another Repository
+      </button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
